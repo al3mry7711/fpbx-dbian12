@@ -60,3 +60,11 @@ cd freepbx
 ./install -n
 
 echo "[✓] FreePBX installation complete and ready to use"
+
+
+# keep container running ONLY if launched directly
+if [[ "$1" == "--wait" ]]; then
+  tail -f /dev/null
+else
+  exit 0
+fi
