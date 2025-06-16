@@ -19,4 +19,5 @@ COPY install-freepbx.sh /install-freepbx.sh
 RUN chmod +x /install-freepbx.sh
 
 # تنفيذ السكربت تلقائيًا
-CMD ["/install-freepbx.sh"]
+CMD ["/install-freepbx.sh", "--wait"]
+
