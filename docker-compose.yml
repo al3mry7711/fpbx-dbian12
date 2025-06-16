@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  freepbx:
+    build: .
+    container_name: freepbx
+    privileged: true
+    network_mode: host
+    restart: unless-stopped
